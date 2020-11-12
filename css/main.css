@@ -13,12 +13,12 @@
 
 #header_t_l{width:200px;
 	        height:80px;
-	        background-color:#888;
+	        background-color:#FFE2A0;
 	        float:left}
 
 #header_t_r{width:748px;
 	        height:80px;
-	        background-color:#0F0;
+	        background-color:#C9ffA0;
 	        float:left;
 	        padding-left:20px;
 	        font-size:12px;
@@ -26,7 +26,7 @@
 
 #header_b{width:968px;
 	      height:20px;
-	      background-color:#00F;
+	      background-color:#A0ecff;
 	      float:left}
 
 #body{width:968px;
@@ -35,7 +35,7 @@
 
 #body_l{width:220px;
 	    height:580px;
-	    background-color:#099;
+	    background-color:#a0ecff;
 	    margin-top:10px;
 	    float:left;
 	    margin-left:10px;}
@@ -46,11 +46,11 @@
 	   height:132.5px;
 	   margin-top:10px;
 	   float:left;
-	   background-color:#666} 
+	   background-color:#bbb} 
 
 #body_r{width:720px;
 	    height:580px;
-	    background-color:#099;
+	    background-color:#a0ecff;
 	    margin-top:10px;
 	    float:left;
 	    margin-left:10px;}
@@ -61,27 +61,27 @@
 	   height:275px;
 	   margin-top:10px;
 	   float:left;
-	   background-color:#666;
+	   background-color:#bbb;
 	   margin-left:10px;} 
 
 #foot{width:968px;
 	  height:100px;
-	  background-color:#723}
+	  background-color:#A0C0FF}
 .foot1{font-size:12px;
-	   color:#FFF;
+	   color:#333;
 	   width:968px;
 	   height:26.67px;
 	   text-align:center;
 	   margin-top:5px;
-	   background-color:#900}
+	   background-color:#A0C0FF}
 .menu{width:190.8px;
 	  height:20px;
-	  background-color:#F90;
+	  background-color:#FFA0A0;
 	  float:left;
 	  text-align:center;
 	  margin-left:2px;}
 
-.menu a{color:#CCC;
+.menu a{color:#444;
 	    text-decoration:none}
 .menu a:hover{font-weight:900;
 	          background-color:#333}
