@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" class="ace ace-card-on ace-tab-nav-on ace-main-nav-on ace-sidebar-on" data-theme-color="#c0e3e7">
-  {% include head.html %}
-  <body>
-    <div class="ace-wrapper">
-      
-      <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
-         <div class="ace-head-inner">
+<html lang="en">
+   <head>
+      {% include head.html %}  
+      {% if page.mathjax %}			
+      {% include markdown-enhancements/mathjax.html %}
+      {% endif %} 
+      {% include theme-vue.html%}
+      <!-- change font -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600&amp;subset=greek,greek-ext,latin-ext" rel="stylesheet" async>
+      <!--  -->
+   </head>
+   {% include topnav.html active="home"%}
+   <body>
+      <div id="main">
+         <div class="page">
+            {% include frontmatter.html %}
+            <div id="content-container" style="text-align:justify">
+               {{ content }}			
+            </div>
+            <div id="comment-session">
+               {% include commentit.html %}
+            </div>
          </div>
-      </header>
-
-      {% include personal.html %}
-
-      {{ content }}
-      
-      {% include footer.html %}
-    
-    </div><!-- .ace-wrapper -->
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="{{ '/styles/js/vendor/jquery-1.12.4.min.js' | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ '/styles/js/plugins/highlight/highlight.pack.js' | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ '/styles/js/plugins/jquery.mCustomScrollbar.min.js' | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ '/styles/js/plugins/isotope.pkgd.min.js' | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ '/styles/js/plugins/progressbar.min.js' | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ '/styles/js/plugins/slick.min.js' | prepend: site.baseurl }}"></script>
-
-    <script type="text/javascript" src="{{ '/styles/js/options.js' | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ '/styles/js/main.js' | prepend: site.baseurl }}"></script>
-
-  </body>
+      </div>
+      {% include footer.html %} 
+   </body>
+   {% if page.mermaid == true %}
+   {% include markdown-enhancements/mermaid.html %}
+   {% endif %}
+   {% if page.highlight == true %}
+   {% include markdown-enhancements/highlight.html %}
+   {% endif %}
 </html>

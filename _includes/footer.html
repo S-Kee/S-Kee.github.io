@@ -1,16 +1,11 @@
-<footer id="ace-footer" class="ace-container-shift">
-    <div class="ace-container">
-  <div class="ace-footer-cont clear-mrg">
-    <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="https://gitee.com/xiaodan_yu">XiaoXiao</a></p>
-  </div>
-    </div><!-- .ace-container -->
-</footer><!-- #ace-footer -->
+<footer>
+   <p style="margin-left: auto; margin-right: auto;"> 
+      &copy; {{ site.posts[-1].date | date: '%Y' }}-{{ site.time | date: '%Y' }}, {{ site.author.name }}. This site is open source. {% if page.edit %}<a href="https://github.com/{{site.github_username}}/{{site.github_username}}.github.io/commits/master/{{ page.path }}" > Version history</a>.{% endif %} <a href="https://github.com/{{site.github_username}}/{{site.github_username}}.github.io/edit/master/{{ page.path }}" target="_blank">Improve this page</a>. <a href="https://github.com/{{site.github_username}}/{{site.github_username}}.github.io/blob/master/LICENSE.md" target="_blank">License</a>. <a href="{{site.url}}{{site.baseurl}}/info/disclaimer" target="_blank">Disclaimer</a>. 
+   </p>
+	 {% if include.analytics == false %}
+	 {% else %}
+   {% include clustrmap.html style="hiddenpng"%}
+	 {% endif %}
+</footer>
 
-<!-- Triangle Shapes -->
-<svg id="ace-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
-    <polygon points="0,455,693,352,173,0,92,0,0,71" style="fill:#d2d2d2;stroke:purple;stroke-width:0; opacity: 0.5">
-</svg>
-
-<svg id="ace-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
-    <polygon points="0,0,633,0,633,536" style="fill:#c0e3e7;stroke:purple;stroke-width:0" />
-</svg>
+<link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/footer.css" >

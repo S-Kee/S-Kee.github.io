@@ -1,19 +1,78 @@
 # Site settings
-name: 董小姐
-location: 大连
-company: IBM
-position: Java开发工程师
-github: https://github.com/
-facebook: https://www.facebook.com/
-phone: 1580424XXXX
-email: xxxx@xxx.com
+title: Website Title
+description: Website short description
+baseurl: "" 
+#change the baseurl to "" if you are using it as your user GitHub Pages
+url: "https://yk-liu.github.io"  
 
-baseurl: "/resume.io"
 
-permalink: /:year/:month/:day/:title/
+# GitHub User settings
+username: Username
+github_username: github_username
+user_description: user_description
+user_title: user_title
+email: 
 
-exclude: ['README.md']
+# Blog Author settings
+author:
+  name:            
+  picture:        
+  email:           
+  description:     
+  twitter:
+  facebook:
+  github:          
+  linkedin:
+  clustrmap:      
 
-# Build settings
+
+# markdown
 markdown: kramdown
+  
+kramdown:
+ footnote_nr: 1
+ entity_output: as_char
+ # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+ syntax_highlighter: rouge
+ syntax_highlighter_opts:
+  # Use existing pygments syntax highlighting css
+  css_class: 'highlight'
+ span:
+  line_numbers: false
+ block:
+  line_numbers: true
+  start_line: 1
+ 
+highlighter: rouge
+    
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  
+permalink: none
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      toc: true
+      mathjax: true
+      mermaid: false
+      highlight: false
+      numbering: true
+      status: Completed
+      protected: false
+      commentable: true
+      rss: true
+      numbering: true
+
+
+exclude:
+ - LICENSE.md
+ - README.md
+ - "*.cdf"
+ - "*.nb"
+ - "*.bk"
+ - "*.draft.md"

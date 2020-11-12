@@ -1,16 +1,34 @@
-# If you want to use this theme
+---
+title: About
+layout: info
+Edit: 2018-11-14
+toc: false
+commentable: false
+protected: true
+mathjax: true
+---
 
-Please read [this link](https://yk-liu.github.io/jekyll/Jekyll-Build.html#what-should-i-modify). 
+# Me
 
-I **strongly** recommand that you use the other [repo](https://github.com/yk-liu/PointingToTheMoon) I specially prepared for you! It has all the features that this webiste has and has no personal information of me. You can fork that repo or leave a star if you like. 
 
-However, you can still use this repo for some fine-tuning or hackering. But please at least use the "theme-for-fork" branch rather than the master branch.
 
-If you still want to use the master branch for some reason, please remove files/ descriptions about `yk-liu` so I don't have to pester you to clean up. Also I would appreciate if you don't fork this repo, but clone it and upload to your own, so there is no network between you and me. And if you really like this repo, maybe consider giving it a star.
+# This Site
 
-# About this website
 
-This website (source code [here](https://github.com/yk-liu/yk-liu.github.io)) uses these sources:
+# Posts
+
+The posts are at different status.
+
+| Status    | Meaning                                                      |
+| --------- | ------------------------------------------------------------ |
+| Completed | This post is considered completed, but I might edit it when I came up with something new. |
+| Writing   | This post is being actively edited.                          |
+| Paused    | This post is considered of low priority. I will come back to this post later. |
+| Archived  | This post is outdated and I probably won't update it anymore. |
+
+# Sources
+
+This website uses these sources:
 
 | Module                                                       | Mainly used in                                  | License/ TOS                                                 |
 | ------------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------------ |
@@ -27,3 +45,23 @@ This website (source code [here](https://github.com/yk-liu/yk-liu.github.io)) us
 | [comment](https://commentit.io)                              | Post                                            | [APGL-3.0](https://www.gnu.org/licenses/agpl-3.0.html)       |
 | [404 T-rex game](https://github.com/wayou/t-rex-runner)      | 404 page                                        | from [Chromium source code](https://cs.chromium.org/chromium/src/components/neterror/resources/offline.js?q=t-rex+package), [license](https://chromium.googlesource.com/chromium/src.git/+/master/LICENSE) |
 | [Encryption](https://github.com/robinmoisson/staticrypt)     | Secret Pages                                    | [MIT](http://opensource.org/licenses/MIT)                    |
+
+Additional licensing information can be found YOUR WEBSITE LINK.
+
+# The Name
+
+I named this website "A Finger Pointing to the Moon", as in the Buddhism story:
+
+> **佛告阿难。汝等尚以缘心听法。此法亦缘。非得法性。**
+>
+> **若复观指以为月体。此人岂唯亡失月轮。亦亡其指。何以故。以所标指为明月故。**
+>
+> **岂唯亡指。亦复不识明之与暗。何以故。即以指体。为月明性。明暗二性。无所了故。**
+
+Which has been beautifully put by Bruce Lee:
+
+>It's like a finger pointing away to the moon. Don't concentrate on the finger or you will all that heavenly glory.
+
+# Contact
+
+The best way to reach me is via email: $namer$ @ $web.com$
