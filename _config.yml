@@ -1,0 +1,19 @@
+# Site settings
+name: 董小姐
+location: 大连
+company: IBM
+position: Java开发工程师
+github: https://github.com/
+facebook: https://www.facebook.com/
+phone: 1580424XXXX
+email: xxxx@xxx.com
+
+baseurl: "/resume.io"
+
+permalink: /:year/:month/:day/:title/
+
+exclude: ['README.md']
+
+# Build settings
+markdown: kramdown
+
